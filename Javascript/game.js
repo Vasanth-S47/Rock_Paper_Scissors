@@ -12,8 +12,6 @@ const gameState = {
         }
     }
 }
-//let userScore = 0;
-//let robotScore = 0;
 
 document.querySelectorAll(".user-choice").forEach(button => {
     button.addEventListener("click", function() {
@@ -35,13 +33,7 @@ document.querySelectorAll(".user-choice").forEach(button => {
 
         const result = determineWinner(userChoice, robotChoice);
         document.getElementById("result").textContent = `You chose ${userChoice}, Robot chose ${robotChoice}. ${result}`;
-        
-        /*if (result === "You win!") {
-            userScore++;
-        } else if (result === "Robot wins!") {
-            robotScore++;
-        }*/
-
+ 
         gameState.updateScore(result);
         
         document.getElementById("user-score").textContent = gameState.userScore;
