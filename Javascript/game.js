@@ -1,5 +1,5 @@
-import { getUserChoice } from "./user.js";
-import { getRobotChoice } from "./robot.js";
+import { getUserChoice } from "../Javascript/user.js";
+import { getRobotChoice } from "../Javascript/robot.js";
 
 const gameState = {
     userScore: 0,
